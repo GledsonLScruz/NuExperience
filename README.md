@@ -1,6 +1,6 @@
 # NuExperience
 
-NuExperience é um repositorio de um projeto open source que tem como foco a construção de um app que recrie o mais fielmente a interface do aplicativo do Bubank.
+NuExperience é um repositorio de um projeto open source que tem como foco a construção de um app recriando o mais fielmente a interface do aplicativo do Nubank.
 
 ## Recursos utilizados
 
