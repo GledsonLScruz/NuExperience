@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ballanceFragment"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="25dp">
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/realgray" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_outline_help_outline_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/realgray" />
+
+            <TextView
+                android:id="@+id/saldodisponiveltxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/saldodis"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/backbutton" />
+
+            <TextView
+                android:id="@+id/Saldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/valorsaldo"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:layout_constraintTop_toBottomOf="@id/saldodisponiveltxt" />
+
+            <ImageView
+                android:id="@+id/ic_dinheiroguardado"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/pig_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Saldo"
+                app:tint="@color/black"/>
+
+            <TextView
+                android:id="@+id/dinheiroguardado_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/dinheiroguardado"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/ic_dinheiroguardado"
+                app:layout_constraintTop_toBottomOf="@id/Saldo"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/dinheiroguardado_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dinheiroguaradadovalor"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/ic_dinheiroguardado"
+                app:layout_constraintTop_toBottomOf="@id/dinheiroguardado_txt"
+                android:fontFamily="sans-serif-medium"/>
+
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="45dp"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Saldo"
+                app:tint="@color/realgray" />
+
+            <ImageView
+                android:id="@+id/ic_rendimentototal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_baseline_signal_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ic_dinheiroguardado"
+                app:tint="@color/black"/>
+
+            <TextView
+                android:id="@+id/txt_rendimentototal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/dinheiroguardado"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/ic_rendimentototal"
+                app:layout_constraintTop_toBottomOf="@id/dinheiroguardado_valor"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:id="@+id/valor_rendimentototal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/rendimentovalor"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/ic_dinheiroguardado"
+                app:layout_constraintTop_toBottomOf="@id/txt_rendimentototal"
+                />
+            <TextView
+                android:id="@+id/estemes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/estemes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/valor_rendimentototal"
+                app:layout_constraintTop_toBottomOf="@id/txt_rendimentototal"
+                android:fontFamily="sans-serif-medium"/>
+
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="125dp"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Saldo"
+                app:tint="@color/realgray" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:isScrollContainer="true"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pagar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/gray"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/receber"
+                        app:tint="@color/black" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textpagar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/depositar"
+                    app:layout_constraintLeft_toLeftOf="@id/pagar"
+                    app:layout_constraintRight_toRightOf="@id/pagar"
+                    app:layout_constraintTop_toBottomOf="@id/pagar" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/transferir"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/gray"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toEndOf="@id/pagar"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pagar"
+                        app:tint="@color/black" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/pagar"
+                    app:layout_constraintLeft_toLeftOf="@id/transferir"
+                    app:layout_constraintRight_toRightOf="@id/transferir"
+                    app:layout_constraintTop_toBottomOf="@id/transferir" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/depositar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/gray"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toEndOf="@id/transferir"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/enviar"
+                        app:tint="@color/black" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/transferir"
+                    app:layout_constraintLeft_toLeftOf="@id/depositar"
+                    app:layout_constraintRight_toRightOf="@id/depositar"
+                    app:layout_constraintTop_toBottomOf="@id/depositar" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/recarga"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/gray"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toEndOf="@id/depositar"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_insert_drive_file_24"
+                        app:tint="@color/black" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/extrato"
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="@id/recarga"
+                    app:layout_constraintRight_toRightOf="@id/recarga"
+                    app:layout_constraintTop_toBottomOf="@id/recarga" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cobrar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/gray"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toEndOf="@id/recarga"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cobrar"
+                        app:tint="@color/black" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/cobrar"
+                    app:layout_constraintLeft_toLeftOf="@id/cobrar"
+                    app:layout_constraintRight_toRightOf="@id/cobrar"
+                    app:layout_constraintTop_toBottomOf="@id/cobrar" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</ScrollView>

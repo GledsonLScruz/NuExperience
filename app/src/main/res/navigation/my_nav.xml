@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.nuclone.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_ballanceFragment"
+            app:destination="@id/ballanceFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pixFragment"
+            app:destination="@id/pixFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ballanceFragment"
+        android:name="com.example.nuclone.ballanceFragment"
+        android:label="fragment_ballance"
+        tools:layout="@layout/fragment_ballance" />
+    <fragment
+        android:id="@+id/pixFragment"
+        android:name="com.example.nuclone.PixFragment"
+        android:label="fragment_pix"
+        tools:layout="@layout/fragment_pix" />
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.nuclone.PayFragment"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" />
+</navigation>

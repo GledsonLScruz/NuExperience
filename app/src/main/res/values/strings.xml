@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NuExperience</string>
+    <string name="conta">Conta</string>
+    <string name="frase1">Vamos reinventar o jeito de investir. Cadastre-se e não fique...</string>
+    <string name="frase2">Salve seus amigos da bourocracia. Faça um convite...</string>
+    <string name="areapix">Área Pix</string>
+    <string name="pagar">Pagar</string>
+    <string name="transferir">Transferir</string>
+    <string name="depositar">Depositar</string>
+    <string name="recarga">Recarga\nde celular</string>
+    <string name="cobrar">Cobrar</string>
+    <string name="doacao">Doação</string>
+    <string name="transferenciaintern">Transferir\nInternac.</string>
+    <string name="saldodis">Saldo disponível</string>
+    <string name="valorsaldo">R$ 0,00</string>
+    <string name="dinheiroguardado">Dinheiro guardado</string>
+    <string name="dinheiroguaradadovalor">R$ 0,00</string>
+    <string name="rendimentovalor">+R$ 0,00</string>
+    <string name="estemes">este mês</string>
+    <string name="extrato">Pedir\nExtrato</string>
+    <string name="textopix">Envie e receba pagamentos a qualquer hora e dia da semana, sem pagar nada por isso.</string>
+    <string name="enviar">Enviar</string>
+    <string name="copcol">Pix Copia e Cola</string>
+    <string name="qrcode">Ler QR code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="receber">Receber</string>
+    <string name="registraroutrazerchaves">Registrar ou trazer chaves</string>
+    <string name="descregistraroutraschaves">Registre uma nova chave ou faça uma portabilidade para o Nubank.</string>
+    <string name="configurarpix">Configurar Pix</string>
+    <string name="descconfigurarpix">Gerencie seu limite diário de transferências ou suas chaves Pix.</string>
+    <string name="pagarcompix">Pagar com Pix</string>
+    <string name="descpagarcompix">Leia um QR Code ou cole o código</string>
+    <string name="pagarfaturadocartao">Pagar fatura do cartão</string>
+    <string name="descpagarfatura">Libere o limite do seu Cartão de\ncrédito</string>
+    <string name="pagarumboleto">Pagar um boleto</string>
+    <string name="descpagarumboleto">Contas de luz, água, etc</string>
+</resources>
