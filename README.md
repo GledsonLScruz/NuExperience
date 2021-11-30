@@ -3,7 +3,7 @@
 NuExperience é um repositorio de um projeto open source que tem como foco a construção de um app recriando o mais fielmente a interface do aplicativo do Nubank.
 
 <p align="center">
-<img align="center" width="270" height="585" src="@res/rd/aa.gif">
+<img align="center" width="540" height="585" src="InShot_20211130_170740294.gif">
 <br />
 </p>
 
