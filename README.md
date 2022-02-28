@@ -1,4 +1,4 @@
-# NuExperience
+# NuExperience 💜
 
 NuExperience tem como foco a construção de um app recriando o mais fielmente a interface do aplicativo do Banco Nubank.
 
